@@ -1,0 +1,29 @@
+{
+  "name": "@dynmedia/payment-models",
+  "version": "1.9.0",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Oliver Salzburg",
+    "email": "oliver.salzburg@adesso.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Dynmedia/payment-backend.git",
+    "directory": "packages/payment-models"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "type": "module",
+  "types": "./index.d.mts",
+  "scripts": {
+    "build": "tsc --build",
+    "release": "semantic-release"
+  },
+  "dependencies": {
+    "tslib": "2.4.1"
+  },
+  "devDependencies": {
+    "typescript": "4.8.4"
+  }
+}

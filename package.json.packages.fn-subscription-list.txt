@@ -1,0 +1,60 @@
+{
+  "name": "@dynmedia/fn-subscription-list",
+  "version": "1.9.2",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Oliver Salzburg",
+    "email": "oliver.salzburg@adesso.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Dynmedia/payment-backend.git",
+    "directory": "packages/fn-subscription-list"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./output/index.mjs"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "release": "semantic-release",
+    "test": "npm run build && mocha output/*.test.mjs"
+  },
+  "types": "./output/index.d.mts",
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "1.4.1",
+    "@aws-lambda-powertools/metrics": "1.4.1",
+    "@aws-lambda-powertools/tracer": "1.4.1",
+    "@dynmedia/lib-lambda": "1.12.0",
+    "@middy/core": "3.6.2",
+    "@middy/http-cors": "3.6.2",
+    "@middy/http-error-handler": "3.6.2",
+    "@middy/http-event-normalizer": "3.6.2",
+    "@middy/http-header-normalizer": "3.6.2",
+    "@middy/http-json-body-parser": "3.6.2",
+    "@middy/http-response-serializer": "3.6.2",
+    "@middy/http-security-headers": "3.6.2",
+    "@middy/validator": "3.6.2",
+    "aws-lambda": "1.0.7",
+    "source-map-support": "0.5.21",
+    "stripe": "10.16.0",
+    "tslib": "2.4.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "*",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "18.11.9",
+    "@types/sinon": "^10.0.13",
+    "@types/sinon-chai": "^3.2.9",
+    "chai": "^4.3.7",
+    "json-schema-to-ts": "^2.6.1",
+    "mocha": "^10.1.0",
+    "sinon": "^14.0.2",
+    "sinon-chai": "^3.7.0",
+    "typescript": "4.8.4"
+  }
+}
