@@ -37,7 +37,7 @@
     "@middy/http-json-body-parser": "3.6.2",
     "@middy/http-response-serializer": "3.6.2",
     "@middy/http-security-headers": "3.6.2",
-    "@middy/secrets-manager": "3.6.2",
+    "@middy/secrets-manager": "7.0.0",
     "@middy/validator": "3.6.2",
     "aws-lambda": "1.0.7",
     "source-map-support": "0.5.21",
